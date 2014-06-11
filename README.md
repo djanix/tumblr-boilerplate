@@ -9,7 +9,7 @@ This is a frontend boilerplate to start a tumblr project, using sass and grunt.
 
 ### How to start
 
-go to the project folder ( {project folder}/app ) and then run these commands:
+go to your project folder ( cd {project folder} ) and then run these commands:
 
     npm install
 
