@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+        <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}</title>
+        <link rel="apple-touch-icon" href="{PortraitURL-128}">
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <meta name="image:Header Logo" content=""/>
+
+        <!-- build:style inline inlineCss -->
+            <link rel="stylesheet" type="text/css" href="./assets/css/dest/main.css" />
+        <!-- /build -->
+
+        <style type="text/css">
+            {CustomCSS}
+        </style>
+    </head>
+
+    <body>
+        <!-- build:section layout.header --><!-- /build -->
+
+        <!-- build:section layout.posts --><!-- /build -->
+
+        <!-- build:section layout.footer --><!-- /build -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- build:script inline inlineScripts -->
+            <script src="./assets/js/dest/main.min.js"></script>
+        <!-- /build -->
+    </body>
+</html>

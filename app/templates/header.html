@@ -1,0 +1,26 @@
+<header>
+    <div class="content clearfix">
+        <h1>{Title}</h1>
+
+        {block:Description}
+            <p id="description">{Description}</p>
+        {/block:Description}
+
+        <nav>
+            <ul>
+                {block:HasPages}
+                    {block:Pages}
+                        <li>
+                            <a href="{URL}">{Label}</a>
+                        </li>
+                    {/block:Pages}
+                {/block:HasPages}
+            </ul>
+        </nav>
+
+        <form action="/search" method="get">
+            <input type="text" name="q" value="{SearchQuery}" />
+            <input type="submit" value="{lang:Search}" />
+        </form>
+    </div>
+</header>

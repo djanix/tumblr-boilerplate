@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+body:after {
+    content: 'desktop';
+    height: 0;
+    left: -9999px;
+    line-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    top: -9999px;
+    width: 0;
+}
+
+@media only screen and (max-width: $tablet) {
+    body:after {
+        content: 'tablet';
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    body:after {
+        content: 'mobile';
+    }
+}
+
+#site {
+    /* ==========================================================================
+       Custom styles
+       ========================================================================== */
+}

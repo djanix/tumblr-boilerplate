@@ -1,0 +1,7 @@
+{
+  "name": "base-structure",
+  "version": "0.9.1",
+  "dependencies": {
+    "jquery": "1.11.1"
+  }
+}
