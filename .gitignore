@@ -28,4 +28,6 @@ node_modules/
 ############
 .sass-cache
 
-/assets/
+app/assets/css/dest/
+app/assets/js/dest/
+app/index_compiled.html
